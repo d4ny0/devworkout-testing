@@ -6,7 +6,7 @@ import Form from '../Form';
 
 jest.mock('../../utils');
 
-test('Can fill out a form across multiple pages', async () => {
+it('can fill out a form across multiple pages', async () => {
   mockSubmitForm.mockResolvedValueOnce({ success: true });
   const testData = { food: 'test food', drink: 'test drink' };
 
